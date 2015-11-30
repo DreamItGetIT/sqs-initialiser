@@ -1,6 +1,6 @@
 .PHONY: build
 
-DOCKER_IP=$(shell ip route | grep docker0 | awk '{ print $$9 }')
+DOCKER_IP=$(shell ip route | grep docker0 | grep src | awk '{ print $$9 }')
 
 dev-env: start-sqs
 
