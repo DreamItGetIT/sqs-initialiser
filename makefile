@@ -25,6 +25,8 @@ build-in-docker:
 		-e GO15VENDOREXPERIMENT=1 \
 		digit/go-build:v1.5.1 \
 		go build -o build/sqsinit create_queues.go
+build:
+	@go build -o build/sqsinit create_queues.go
 
 package:
 	docker build -t digit/sqs-initialiser .
