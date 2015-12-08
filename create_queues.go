@@ -33,7 +33,7 @@ func main() {
 	endPoint := flag.String("endpoint", "", "IP:PORT of SQS service")
 	region := flag.String("region", "", "SQS AWS region")
 	ssl := flag.Bool("ssl", false, "Use SSL, false by default")
-	flag.Var(qNames, "queues", "The queues' names to create")
+	flag.Var(qNames, "queues", "The queues' names to create, provide one or a comma separated list of them")
 
 	flag.Parse()
 

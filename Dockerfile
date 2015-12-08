@@ -1,4 +1,4 @@
-FROM golang:1.5.1
+FROM golang:1.5.2
 
 ADD . /go/src/github.com/DreamItGetIT/sqs-initialiser
 WORKDIR /go/src/github.com/DreamItGetIT/sqs-initialiser
